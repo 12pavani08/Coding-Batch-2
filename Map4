@@ -1,0 +1,22 @@
+import java.util.*;
+class Map4
+{
+public static void main(String args[])
+{
+HashMap<Integer,Integer>x=new HashMap<Integer,Integer>();
+Scanner sc=new Scanner(System.in);
+int n;
+int key;
+int arr[]={2,2,3,4,5,4,6,4,5,72};
+System.out.println("enter n value");
+n=sc.nextInt();
+for(int i=0;i<arr.length;i++)
+{
+if (x.containsKey(arr[i]))
+x.put(arr[i],x.get (arr[i])+1);
+else
+x.put(arr[i],1);
+}
+System.out.println(x);
+}
+}
